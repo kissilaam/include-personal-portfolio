@@ -199,15 +199,19 @@ main div {
 
 /*? INTERESSES */
 
-.icones-interesses {
+#icones-interesses {
 	width: 60px;
 	margin-left: 10px;
 	transition: 0.7s transform;
 }
 
-.icones-interesses:hover {
+#icones-interesses:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+#caixa-interesses-txt {
+	display: none;
 }
 
 /*? FOOTER */
