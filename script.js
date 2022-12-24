@@ -1,38 +1,57 @@
 function abreCaixaInteresses() {
 	let x = document.getElementById('caixa-interesses-txt')
-	if (x.style.display === 'none') {
-		x.style.display = 'block'
-	} else {
+	if (x.style.display === 'block') {
 		x.style.display = 'none'
+	} else {
+		x.style.display = 'block'
 	}
-
-	// test()
 }
 
-// function test() {
-// 	let interesseTxt = document.getElementById('interesse-txt')
-// 	let y = document.querySelectorAll('input[type=image]')
-// 	for (var i = 0; i < y.length; i++) {
-// 		// console.log(i, y[i])
-// 		// let index = y[i]
-// 		switch (i) {
-// 			case 0:
-// 				console.log(i)
-// 				interesseTxt.innerHTML = 'mensagem 1'
-// 				break
-// 			case 1:
-// 				console.log(i)
-// 				interesseTxt.innerHTML = 'mensagem 2'
-// 				// console.log(y[i])
-// 				break
-// 			case 2:
-// 				console.log(i)
+function caixaAnime() {
+	abreCaixaInteresses()
+	let interesseTxt = document.getElementById('interesse-txt')
+	const intAnime = document.getElementsByClassName('interesse-anime')
+	if (intAnime) interesseTxt.innerHTML = 'anime!'
+}
 
-// 				interesseTxt.innerHTML = 'mensagem 3'
-// 				// console.log(y[i])
-// 				break
-// 			default:
-// 			// console.log(`Sorry.`)
-// 		}
-// 	}
-// }
+function caixaBook() {
+	abreCaixaInteresses()
+	let interesseTxt = document.getElementById('interesse-txt')
+	const intBook = document.getElementsByClassName('interesse-books')
+	if (intBook) interesseTxt.innerHTML = 'teste!'
+}
+
+function caixaFilm() {
+	abreCaixaInteresses()
+	let interesseTxt = document.getElementById('interesse-txt')
+	const intFilm = document.getElementsByClassName('interesse-film')
+	if (intFilm) interesseTxt.innerHTML = 'filme!'
+}
+
+function caixaTV() {
+	abreCaixaInteresses()
+	let interesseTxt = document.getElementById('interesse-txt')
+	const intTV = document.getElementsByClassName('interesse-tv')
+	if (intTV) interesseTxt.innerHTML = 'tv!'
+}
+
+function caixaGames() {
+	abreCaixaInteresses()
+	let interesseTxt = document.getElementById('interesse-txt')
+	const intGames = document.getElementsByClassName('interesse-games')
+	if (intGames) interesseTxt.innerHTML = 'games!'
+}
+
+function caixaCat() {
+	abreCaixaInteresses()
+	let interesseTxt = document.getElementById('interesse-txt')
+	const intCat = document.getElementsByClassName('interesse-cat')
+	if (intCat) interesseTxt.innerHTML = 'cat!'
+}
+
+function caixaNature() {
+	abreCaixaInteresses()
+	let interesseTxt = document.getElementById('interesse-txt')
+	const intNature = document.getElementsByClassName('interesse-nature')
+	if (intNature) interesseTxt.innerHTML = 'nature!'
+}
